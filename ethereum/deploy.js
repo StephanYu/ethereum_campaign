@@ -1,7 +1,7 @@
 require('dotenv').load();
 const HDWalletProvider = require('truffle-hdwallet-provider');
 const Web3 = require('web3');
-const compiledFactory = require('./build/CampaignFactory.sol');
+const compiledFactory = require('./build/CampaignFactory.json');
 const provider = new HDWalletProvider(
   `${process.env.MNEMONIC}`,
   `https://rinkeby.infura.io/${process.env.INFURA_API_KEY}`
