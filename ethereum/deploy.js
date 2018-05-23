@@ -1,10 +1,9 @@
-require('dotenv').load();
 const HDWalletProvider = require('truffle-hdwallet-provider');
 const Web3 = require('web3');
 const compiledFactory = require('./build/CampaignFactory.json');
 const provider = new HDWalletProvider(
-  `${process.env.MNEMONIC}`,
-  `https://rinkeby.infura.io/${process.env.INFURA_API_KEY}`
+  'satoshi rely recycle stamp smart soap modify vast effort piece vendor pulse',
+  'https://rinkeby.infura.io/zFJJKQC9147CCsRhseih'
 );
 const web3 = new Web3(provider);
 
